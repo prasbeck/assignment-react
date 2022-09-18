@@ -1,13 +1,67 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.App{
+    box-sizing: border-box;
+    background-image: linear-gradient(to bottom right, rgb(59, 5, 5), rgb(130, 7, 7));
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.navbar{
+    background-color: inherit;
+    border-bottom: 2px solid rgb(117, 24, 24);
+}
+
+.navbar .right{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .right p{
+    margin-bottom: 0;
+}
+
+.navbar .right p:nth-of-type(1){
+font-weight: bold;
+}
+
+.navbar .right p:nth-of-type(2){
+font-weight: lighter;
+}
+
+.navbar img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 0 10px;
+}
+
+.dashboard{
+    /* max-width: 80%; */
+
+}
+
+.row-1, .row-2{
+    display: flex;
+    justify-content: space-around
+}
+
+.row-1 .card, .row-2 .card{
+    width: fit-content;
+    margin:1em;
+    padding: 1em 0 0;
+    background-image: linear-gradient(to right, rgb(71, 67, 67), rgb(107, 99, 99), rgb(71, 67, 67));
+    border: 2px solid rgb(180, 78, 121);
+}
+
+.row-1 .card .card-footer, .row-2 .card .card-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    column-gap: 8em;
+    margin: 1em 0 0;
+    background-image: linear-gradient(to right, rgb(185, 67, 16), black, red);
+}
+
+.row-1 .card .btn, .row-2 .card .btn{
+    background-color: rgb(180, 78, 121);
+    color: black;
+    border-radius: 15px;
 }
