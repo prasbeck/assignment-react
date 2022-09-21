@@ -1,11 +1,21 @@
-.App{
+.app{
     box-sizing: border-box;
-    background-image: linear-gradient(to bottom right, rgb(59, 5, 5), rgb(130, 7, 7));
+    height: 100vh;
+    overflow: hidden;
+    background-image: linear-gradient(to right, rgb(24, 3, 3), rgb(60, 6, 6));
+}
+a{
+    text-decoration: none;
+    color: rgb(255, 214, 188);
+}
+.active{
+    background-color: #b00b0b;
+    border-radius: 5px;
 }
 
 .navbar{
     background-color: inherit;
-    border-bottom: 2px solid rgb(117, 24, 24);
+    border-bottom: 2px solid rgb(63, 14, 14);
 }
 
 .navbar .right{
@@ -32,36 +42,38 @@ font-weight: lighter;
     border-radius: 50%;
     margin: 0 10px;
 }
-
-.dashboard{
-    /* max-width: 80%; */
-
+.seller{
+    color: rgb(130, 46, 46);
 }
 
-.row-1, .row-2{
-    display: flex;
-    justify-content: space-around
+.card{
+    background-image: linear-gradient(to right, rgb(29, 27, 27), rgb(68, 54, 52), rgb(29, 27, 27));
+    border: 2px solid rgb(113, 52, 52);
 }
+    
 
-.row-1 .card, .row-2 .card{
-    width: fit-content;
-    margin:1em;
-    padding: 1em 0 0;
-    background-image: linear-gradient(to right, rgb(71, 67, 67), rgb(107, 99, 99), rgb(71, 67, 67));
-    border: 2px solid rgb(180, 78, 121);
-}
-
-.row-1 .card .card-footer, .row-2 .card .card-footer{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    column-gap: 8em;
+.card .card-footer{
     margin: 1em 0 0;
-    background-image: linear-gradient(to right, rgb(185, 67, 16), black, red);
+    background-image: linear-gradient(to right, rgb(185, 67, 16), black, rgb(210, 4, 45));
 }
 
-.row-1 .card .btn, .row-2 .card .btn{
-    background-color: rgb(180, 78, 121);
-    color: black;
-    border-radius: 15px;
+.card .btn{
+    background-color: rgb(217, 113, 113);
+    color: #271f54;
+    border: 2px solid rgb(180, 78, 78);
+    border-radius: 16px;
+}
+.has-search .form-control {
+    padding-left: 2.375rem;
+}
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
 }
