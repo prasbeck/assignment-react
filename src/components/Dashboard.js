@@ -12,7 +12,7 @@ class Dashboard extends Component{
     render(){
         const dashboard = this.props.games.map((game) => {
             return(
-                <div className="col-12 col-md-3 mt-4 ">
+                <div className="col-12 col-lg-3 col-md-6 mt-4 ">
                     <Card key={game.id} className="card text-white">
                         <CardTitle className="mt-4 mb-0">{game.heading}</CardTitle>
                         <CardBody className="mt-0 pt-2">
